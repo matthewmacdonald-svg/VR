@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Matthew Macdonald VR</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<!--VR code below-->
+<body>
+<a-scene>
+  
+<a-box position="0 2 -4" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -2; dir: alternate; loop: true; dur: 2000">
+</a-box>
+<a-box position="0 3 -5" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -6; dir: alternate; loop: true; dur: 2000">
+</a-box>
+<a-box position="0 4 -6" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -10; dir: alternate; loop: true; dur: 2000">
+</a-box>
+<a-box position="0 5 -7" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -1; dir: alternate; loop: true; dur: 2000">
+</a-box>
+<a-box position="0 6 -8" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -3; dir: alternate; loop: true; dur: 2000">
+</a-box>
+<a-box position="0 7 -9" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -4; dir: alternate; loop: true; dur: 2000">
+</a-box>
+<a-box position="0 8 -10" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -5; dir: alternate; loop: true; dur: 2000">
+</a-box>
+<a-box position="0 9 -11" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -7; dir: alternate; loop: true; dur: 2000">
+</a-box>
+<a-box position="0 10 -12" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -8; dir: alternate; loop: true; dur: 2000">
+</a-box>
+<a-box position="0 11 -13" 
+       color="#FF0000" 
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+       animation__hover="property: position; to: 0 100 -9; dir: alternate; loop: true; dur: 2000">
+</a-box>
+    <a-assets>
+<img id="cover" src="tvAssets/download.jpg">
+<!-- Video -->
+<video id="videoclip" loop="true"src="tvAssets/harry_potter.mp4" crossorigin="anonymous" preload="auto"></video>
+<!-- Buttons and Background -->
+  <img id="play" src="tvAssets/btnPlay.png" preload="auto">
+  <img id="pause" src="tvAssets/btnPause.png" preload="auto">
+  <img id="tv_background" src="tvAssets/tv_background.jpg"preload="auto">
+    </a-assets>
+<a-entity environment="preset: dream; dressingAmount: 50; skyColor: #D0D490; groundYScale: 5;"></a-entity>
+
+<a-box id="wall1" position="0 1.473 4.907" rotation="0 0 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall2" position="0 1.473 -4.907" rotation="0 0 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall3" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall4" position="-5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" src="#cover"></a-cylinder>
+<a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 -4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" src="#cover"></a-cylinder>
+<a-box id="roof_right" position="2.580 4.328 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" src="#cover"></a-box>
+<a-box id="roof_left" position="-2.599 4.321 -0.017" rotation="28.433 -90 0" scale="10.931 0.20 6.130" src="#cover"></a-box>
+
+<a-box id="wall1" position="0 3 10" rotation="0 0 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall2" position="0 3 -10" rotation="0 0 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall3" position="10.50 3 -0.016" rotation="0 -90 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall4" position="-10.50 3 -0.016" rotation="0 -90 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-cylinder id="triangle_front" segments-radial="3" position="0 8 10" rotation="-90 0 0" scale="5.774 0.2 1.8" src="#cover"></a-cylinder>
+<a-cylinder id="triangle_front" segments-radial="3" position="0 8 -10" rotation="-90 0 0" scale="5.774 0.2 1.8" src="#cover"></a-cylinder>
+<a-box id="roof_right" position="6 10 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" src="#cover"></a-box>
+<a-box id="roof_left" position="-6 10 -0.034" rotation="28.433 -90 0" scale="10.931 0.20 6.130" src="#cover"></a-box>
+
+<a-box id="wall1" position="0 4.5 15" rotation="0 0 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall2" position="0 4.5 -15" rotation="0 0 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall3" position="15.75 4.5 -0.024" rotation="0 -90 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall4" position="-15.75 4.5 -0.024" rotation="0 -90 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-cylinder id="triangle_front" segments-radial="3" position="0 12 15" rotation="-90 0 0" scale="5.774 0.2 1.8" src="#cover"></a-cylinder>
+<a-cylinder id="triangle_front" segments-radial="3" position="0 12 -15" rotation="-90 0 0" scale="5.774 0.2 1.8" src="#cover"></a-cylinder>
+<a-box id="roof_right" position="9 15 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" src="#cover"></a-box>
+<a-box id="roof_left" position="-9 15 -0.034" rotation="28.433 -90 0" scale="10.931 0.20 6.130" src="#cover"></a-box>s
+
+
+<a-box id="wall1" position="0 6 20" rotation="0 0 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall2" position="0 6 -20" rotation="0 0 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall3" position="21 6 -0.032" rotation="0 -90 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-box id="wall4" position="-21 6 -0.032" rotation="0 -90 0" scale="10 3 0.2" src="#cover"></a-box>
+<a-cylinder id="triangle_front" segments-radial="3" position="0 16 20" rotation="-90 0 0" scale="5.774 0.2 1.8" src="#cover"></a-cylinder>
+<a-cylinder id="triangle_front" segments-radial="3" position="0 16 -20" rotation="-90 0 0" scale="5.774 0.2 1.8" src="#cover"></a-cylinder>
+<a-box id="roof_right" position="12 20 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" src="#cover"></a-box>
+<a-box id="roof_left" position="-12 20 -0.068" rotation="28.433 -90 0" scale="10.931 0.20 6.130" src="#cover"></a-box>
+
+<!-- TV with Play and Pause -->
+<a-entity>
+  <a-video src="#videoclip" position="-3.893 1.6 0" rotation="0 90 0" width="2" height="1.125"></a-video>
+
+  <!-- TV background -->
+  <a-plane id="videoControls" position="-3.893 0.854 0" scale="2 0.386 1.714" rotation="0 90 0" opacity="1" src="#tv_background">
+    
+    <!-- Play button -->
+    <a-plane id="vidplaybox" src="#play" scale="0.122 0.678 0.122" position="-0.350 0 .01" shader="flat" transparent="true" videoplayer></a-plane>
+    
+    <!-- Stop button -->
+    <a-plane id="vidpausebox" src="#pause" scale="0.122 0.678 0.122" position="0.350 0 .01" shader="flat" transparent="true" videopauser></a-plane>
+
+  </a-plane>
+</a-entity>
+
+<!-- Allows clicking with the mouse -->
+<a-entity cursor="rayOrigin: mouse"></a-entity>
+</a-scene>
+</body>
+</html>
